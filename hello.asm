@@ -2,7 +2,7 @@
 ;       code begins executing at mem address 1.
 ;       if a start label is provided, the preprocessor will add a "JMP start" instruction into memory
 ;       to make the code move to the starting point
-start:
+_start:
     ; syscall PRINT
     MOV syc, 2
     MOV syv, "hello world\n"

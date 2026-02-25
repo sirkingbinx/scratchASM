@@ -2,7 +2,7 @@
 loop:
     jmp loop
 
-start:
+_start:
     ; warning
     MOV syc, 2
     MOV syv, "Press STOP if your fans start turning up\nentering loop.."
