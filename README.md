@@ -1,9 +1,8 @@
-# scab-scratch
-Scab is a mock Assembly language and virtual machine for Scratch. It is called scab for many reasons:
-- a name not taken by other big projects
-- is a *pain* to develop
-- an acronym for **Sc**ratch **A**ssem**b**ler
-
-This repository isn't actually the source code, it just holds the language tests.
-
+# scratch-vm Project Tests
 [Project link](https://scratch.mit.edu/projects/1283178575/)
+
+This repository holds all the tests used for my scratch-vm project.
+
+## Specs
+RAM: 32kb
+CPU Speed: 4.3 kHz
