@@ -1,8 +1,30 @@
-# scratch-vm Project Tests
-[Project link](https://scratch.mit.edu/projects/1283178575/)
+<p align="center">
+  <img width="493" height="411" alt="image" src="https://github.com/user-attachments/assets/dd969cd2-21d1-483c-98a4-4c39fbb25082" />
+  <h1 align="center"><a href="https://scratch.mit.edu/projects/1283178575/">scratch-vm</a></h1>
+</p>
 
-This repository holds all the tests used for my scratch-vm project.
+scratch-VM is an Assembly editor, executor, and VM built in Scratch. It aims to be somewhat compatable with x86 Assembly and be fast enough to run on standalone Scratch (so without TurboWarp, Penguin, etc.)
 
-## Specs
+This repository is not the actual scratch-vm source code, it holds the language tests and documentation.
+
+## Specs (as of 2/25/26)
 RAM: 32kb
 CPU Speed: 4.3 kHz
+
+## Instructions
+| Opcode  | Usage                | Operation                                    |
+| ------- | -------------------- | -------------------------------------------- |
+| MOV     | `MOV ax, 1`          | ax = 1                                       |
+| ADD     | `ADD ax, 1`          | ax += 1                                      |
+| SUB     | `SUB ax, 1`          | ax -= 1                                      |
+| MUL     | `MUL ax, 2`          | ax *= 2 (unsigned)                           |
+| DIV     | `DIV ax, 2`          | ax /= 2 (unsigned)                           |
+| IMUL    | `IMUL ax, 2`         | ax *= 2 (signed)                             |
+| IDIV    | `IDIV ax, 2`         | ax /= 2 (signed)                             |
+| INC     | `INC ax`             | ax++                                         |
+| PUSH    | `PUSH 1`             | add `1` to top of stack                      |
+| POP     | `POP ax`             | move top of stack to `ax`                    |
+| JMP     | `JMP label`          | jump to label                                |
+| CALL    | `CALL label`         | jump to label `func` and set point of `RET`  |
+| RET     | `RET`                | jump to line after `CALL`er                  |
+| SYSCALL | `SYSCALL`            | invoke system func in `syc` with arg `syv`   |
