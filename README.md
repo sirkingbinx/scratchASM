@@ -28,3 +28,13 @@ CPU Speed: 4.3 kHz
 | CALL    | `CALL label`         | jump to label `func` and set point of `RET`  |
 | RET     | `RET`                | jump to line after `CALL`er                  |
 | SYSCALL | `SYSCALL`            | invoke system func in `syc` with arg `syv`   |
+| PUSH    | `PUSH data`          | push `data` to top of stack                  |
+| POP     | `POP ax`             | move data at top of stack to register `ax`   |
+| CMP     | `CMP ax, 1`          | compare `ax` to 1, update flags              |
+| JE      | `JE label`           | (cmp) jump if equal                          |
+| JZ      | `JZ label`           | (cmp) jump if 0                              |
+| JNE     | `JNE label`          | (cmp) jump if not equal                      |
+| JNZ     | `JNZ label`          | (cmp) jump if not 0                          |
+| JG      | `JG label`           | (cmp) jump if greater than                   |
+| JL      | `JL label`           | (cmp) jump if less than                      |
+| JS      | `JS label`           | (cmp) jump if signed / negative              |

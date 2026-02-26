@@ -1,6 +1,6 @@
 ; here's the kicker
-loop:
-    jmp loop
+.loop:
+    jmp .loop
 
 _start:
     ; warning
@@ -8,4 +8,4 @@ _start:
     MOV syv, "Press STOP if your fans start turning up\nentering loop.."
     CALL
 
-    jmp loop ; uh oh
+    jmp .loop ; uh oh
