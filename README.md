@@ -40,5 +40,5 @@ Opcodes, registers, and labels are not case sensitive (as they are converted to 
 | JNZ     | `JNZ label`          | (cmp) jump if not 0                          |
 | JG      | `JG label`           | (cmp) jump if greater than                   |
 | JL      | `JL label`           | (cmp) jump if less than                      |
-
 | JS      | `JS label`           | (cmp) jump if signed / negative              |
+
