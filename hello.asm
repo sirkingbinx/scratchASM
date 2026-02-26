@@ -6,9 +6,9 @@ _start:
     ; syscall PRINT
     MOV syc, 2
     MOV syv, "hello world\n"
-    CALL
+    SYSCALL
 
     ; syscall EXIT
     MOV syc, 1
     MOV syv, 0
-    CALL
+    SYSCALL

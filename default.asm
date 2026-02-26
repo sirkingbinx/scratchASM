@@ -5,6 +5,7 @@ hello:
     MOV syv, "hello world\n" ; our text
     SYSCALL ; do syscall
     RET
+    
 _start:
     CALL hello ; hello world function
     MOV syc, 1 ; exit
