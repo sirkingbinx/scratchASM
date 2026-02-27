@@ -11,7 +11,7 @@ This repository is not the actual scratch-vm source code, it holds the language 
 | Spec        | Value           | Tested with                                         |
 | ----------- | --------------- | ----------------------------------------------------|
 | RAM         | 32 kb           | Scratch (length of Memory)                          |
-| CPU Speed   | 4.85 kHz        | [cpuclocker.asm](/cpuclocker.asm)                   |
+| CPU Speed   | 16.13 kHz       | [cpuclocker.asm](/cpuclocker.asm)                   |
 
 ## Instructions
 Opcodes, registers, and labels are not case sensitive (as they are converted to uppercase by the preprocessor anyway)
