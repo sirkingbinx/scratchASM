@@ -1,16 +1,16 @@
 ; switch between debugger view (with the bunch of tools) and display view (nothing, DIY)
 
 changemode:
-  MOV syc, 3 ; syscall DISPLAYMODE
-  MOV syv, $ax ; change ax for this
+  MOV rax, 3 ; syscall DISPLAYMODE
+  MOV rsi1, $ax ; change ax for this
   SYSCALL
   RET
 
 dothing:
   CALL changemode
   
-  MOV syc, 1
-  MOV syv, 0
+  MOV rax, 1
+  MOV rsi1, 0
   SYSCALL
 
 _start:

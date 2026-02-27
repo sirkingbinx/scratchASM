@@ -4,11 +4,11 @@
 ;       to make the code move to the starting point
 _start:
     ; syscall PRINT
-    MOV syc, 2
-    MOV syv, "hello world\n"
+    MOV rax, 2
+    MOV rsi1, "hello world\n"
     SYSCALL
 
     ; syscall EXIT
-    MOV syc, 1
-    MOV syv, 0
+    MOV rax, 1
+    MOV rsi1, 0
     SYSCALL

@@ -42,3 +42,12 @@ Opcodes, registers, and labels are not case sensitive (as they are converted to 
 | JL      | `JL label`           | (cmp) jump if less than                      |
 | JS      | `JS label`           | (cmp) jump if signed / negative              |
 
+## Registers
+| Register Names | Purpose                           |
+| -------------- | --------------------------------- |
+| ax, bx, cx, dx | general-purpose                   |
+| sp             | stack pointer                     |
+| ip             | instruction pointer               |
+| rp             | return pointer (`RET`)            |
+| rax            | syscall id                        |
+| rsi1, rsi2     | syscall arguments                 |

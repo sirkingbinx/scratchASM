@@ -8,10 +8,10 @@ _start:
     MOV bx, $ax
 
     ; print out bx
-    MOV syc, 2
-    MOV syv, $bx
+    MOV rax, 2
+    MOV rsi1, $bx
     SYSCALL
     
-    MOV syc, 1
-    MOV syv, 0
+    MOV rax, 1
+    MOV rsi1, 0
     SYSCALL

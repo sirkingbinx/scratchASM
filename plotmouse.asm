@@ -2,8 +2,8 @@
 
 _start:
     ; enter display mode for raw display management
-    mov syc, 3
-    mov syv, 2
+    mov rax, 3
+    mov rsi1, 2
     syscall
 
     ; start the thing
@@ -11,25 +11,25 @@ _start:
 
 .plotmouse:
    ; mouse x (7) & mouse y (8)
-    mov syc, 7
-    mov syv, cx
+    mov rax, 7
+    mov rsi1, cx
     syscall
     
-    mov syc, 8
-    mov syv, dx
+    mov rax, 8
+    mov rsi1, dx
     syscall
 
 ; move to mouse x & y
-    mov syc, 4
-    mov syv, $cx
+    mov rax, 4
+    mov rsi1, $cx
     syscall
     
-    mov syc, 5
-    mov syv, $dx
+    mov rax, 5
+    mov rsi1, $dx
     syscall
 
 ; plot a white pixel
-    mov syc, 6
+    mov rax, 6
     syscall
 
 ; & repeat
