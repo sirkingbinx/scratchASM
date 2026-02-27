@@ -1,9 +1,5 @@
 ; executables running outside of the raw mode (the default) can use x86-based stuff
-; append the header on line 4 to enter x86 emulation mode. doesn't support all instructions (duh)
-
 ; we use NASM style here since its pretty and easy to read
-
-.cflag x86 ; compile as x86
 
 section .data:
     hello: .asciz "hello world\n"
