@@ -34,6 +34,7 @@ Opcodes, registers, and labels are not case sensitive (as they are converted to 
 | PUSH    | `PUSH data`          | push `data` to top of stack                  |
 | POP     | `POP ax`             | move data at top of stack to register `ax`   |
 | CMP     | `CMP ax, 1`          | compare `ax` to 1, update flags              |
+| TEST    | `TEST ax, 1`         | compare `ax` to 1 (bitwise), update flags    |
 | JE      | `JE label`           | (cmp) jump if equal                          |
 | JZ      | `JZ label`           | (cmp) jump if 0                              |
 | JNE     | `JNE label`          | (cmp) jump if not equal                      |
