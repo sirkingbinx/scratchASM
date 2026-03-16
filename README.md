@@ -5,13 +5,13 @@
 
 scratch-VM is an Assembly editor, executor, and VM built in Scratch. It aims to be somewhat compatable with x86 Assembly and be fast enough to run on standalone Scratch (so without TurboWarp, Penguin, etc.)
 
-This repository is not the actual scratch-vm source code, it holds the language tests and documentation.
+This repository holds the [language tests](/asm_tests/) and the [JavaScript interpreter](/js), while the actual scratch-VM project is held [in this project](https://scratch.mit.edu/projects/1283178575)
 
 ## Specs
 | Spec        | Value           | Tested with                                         |
 | ----------- | --------------- | ----------------------------------------------------|
 | RAM         | 32 kb           | Scratch (length of Memory)                          |
-| CPU Speed   | 16.13 kHz       | [cpuclocker.asm](/cpuclocker.asm)                   |
+| CPU Speed   | 16.13 kHz       | [cpuclocker.asm](/asm_tests/cpuclocker.asm)         |
 
 ## Instructions
 Opcodes, registers, and labels are not case sensitive (as they are converted to uppercase by the preprocessor anyway)
