@@ -69,10 +69,28 @@ export class ScratchVMState {
         });
     }
 
+    /**
+     * @param {number} len Amount of memory (in bytes) to allocate
+     * @returns {number|VMError} The memory address of the start of the allocated memory or a VMError.
+     */
+    malloc(len) {
+        let startIdx = this.memUsage;
+        let endIdx = startIdx + endIdx;
+
+        if (endIdx > this.memory.length) {
+            return 0x7A;
+        }
+
+        memUsage = endIdx + 1;
+        
+        return startIdx;
+    }
+
     /** @param {any} obj The object to add into memory. */
     loadIntoMemory(obj) {
+        this.malloc();
         if (memUsage >= this.memory.length) {
-            return 0x6A; // Memory unavaliable
+            return 0x7A; // Memfull
         }
 
         this.memory[memUsage] = obj;
@@ -85,11 +103,11 @@ export class ScratchVMState {
      */
     atMemoryAddress(address) {
         if (address > this.memory.length) {
-            return 0x7A;
+            return 0x7B;
         }
 
         if (this.memory[address] == null) {
-            return 0x7B;
+            return 0x7C;
         }
 
         return this.memory[address];

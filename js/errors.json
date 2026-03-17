@@ -1,14 +1,17 @@
-[
-    {
-        "id": "0x6A",
-        "message": "Memory full"
+{
+    "0x0A": {
+        "message": ""
     },
-    {
-        "id": "0x7A",
-        "message": "Address was out-of-bounds"
+    "0x7A": {
+        "message": "Memory full",
+        "source": "scratchVM::vmstate::malloc"
     },
-    {
-        "id": "0x7B",
-        "message": "Memory unallocated"
+    "0x7B": {
+        "message": "Memory address was out-of-bounds",
+        "source": "scratchVM::vmstate::atMemoryAddress"
+    },
+    "0x7C": {
+        "message": "Memory unallocated",
+        "source": "scratchVM::vmstate::atMemoryAddress"
     }
-]
+}
