@@ -1,0 +1,14 @@
+[
+    {
+        "id": "0x6A",
+        "message": "Memory full"
+    },
+    {
+        "id": "0x7A",
+        "message": "Address was out-of-bounds"
+    },
+    {
+        "id": "0x7B",
+        "message": "Memory unallocated"
+    }
+]
