@@ -5,7 +5,7 @@
 
 scratch-VM is an Assembly editor, executor, and VM built in Scratch. It aims to be somewhat compatable with x86 Assembly and be fast enough to run on standalone Scratch (so without TurboWarp, Penguin, etc.)
 
-This repository holds the [language tests](/tests/) and the [JavaScript interpreter](/js), while the actual scratch-VM project is held [in this project](https://scratch.mit.edu/projects/1283178575)
+This repository holds the [language tests](/tests/) and the [JavaScript analyzer source](/asm-analyzer), while the actual scratch-VM project is held [in this project](https://scratch.mit.edu/projects/1283178575)
 
 ## Specs
 | Spec        | Value           | Tested with                                         |

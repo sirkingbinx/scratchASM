@@ -1,0 +1,139 @@
+{
+    "nop": {
+        "name": "No Operation",
+        "opcode": 1,
+        "description": "Perform no operation for one clock cycle.",
+        "arguments": []
+    },
+    "mov": {
+        "name": "Move",
+        "opcode": 2,
+        "description": "Move data into the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register of the data"
+            },
+            {
+                "name": "data",
+                "type": "int",
+                "description": "The data to move into the register"
+            }
+        ]
+    },
+    "add": {
+        "name": "Add",
+        "opcode": 3,
+        "description": "Perform an addition operation on the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            },
+            {
+                "name": "incr",
+                "type": "int",
+                "description": "The amount to increment the register by"
+            }
+        ]
+    },
+    "inc": {
+        "name": "Increment",
+        "opcode": 4,
+        "description": "Increment the specified register by one.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            }
+        ]
+    },
+    "sub": {
+        "name": "Subtract",
+        "opcode": 5,
+        "description": "Perform a subtraction operation on the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            },
+            {
+                "name": "incr",
+                "type": "int",
+                "description": "The amount to decrement the register by"
+            }
+        ]
+    },
+    "mul": {
+        "name": "Multiply",
+        "opcode": 6,
+        "description": "Perform a multiplication operation on the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            },
+            {
+                "name": "incr",
+                "type": "int",
+                "description": "The amount to multiply the register by"
+            }
+        ]
+    },
+    "div": {
+        "name": "Divide",
+        "opcode": 7,
+        "description": "Perform a division operation on the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            },
+            {
+                "name": "incr",
+                "type": "int",
+                "description": "The amount to divide the register by"
+            }
+        ]
+    },
+    "imul": {
+        "name": "Multiply (signed)",
+        "opcode": 8,
+        "description": "Perform a signed multiplication operation on the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            },
+            {
+                "name": "incr",
+                "type": "sint",
+                "description": "The amount to multiply the register by"
+            }
+        ]
+    },
+    "idiv": {
+        "name": "Divide (signed)",
+        "opcode": 9,
+        "description": "Perform a signed divison operation on the specified register.",
+        "arguments": [
+            {
+                "name": "reg",
+                "type": "register",
+                "description": "The target register to perform the arithmetic on"
+            },
+            {
+                "name": "incr",
+                "type": "sint",
+                "description": "The amount to divide the register by"
+            }
+        ]
+    }
+}
