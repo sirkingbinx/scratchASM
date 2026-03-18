@@ -1,6 +1,7 @@
 {
     "0x0A": {
-        "message": ""
+        "message": "Unknown error",
+        "source": "scratchVM"
     },
     "0x7A": {
         "message": "Memory full",
