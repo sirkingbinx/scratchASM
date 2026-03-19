@@ -7,6 +7,8 @@
     "homepage": "https://github.com/sirkingbinx/scratch-vm/analyzer",
     "bugs": "https://github.com/sirkingbinx/scratch-vm/issues",
 
+    "main": "main.ts",
+
     "author": "SirKingBinx <me@sirkingbinx.dev> (https://sirkingbinx.dev)",
 
     "dependencies": {

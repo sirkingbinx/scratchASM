@@ -1,7 +1,7 @@
-// interfaces/AnalyzerArray.ts -- AnalyzerArray class
+// analyzer/interfaces/AdvancedArray.ts -- AdvancedArray class
 // (C) 2026 SirKingBinx
 
-export class AnalyzerArray<T> extends Array<T> {
+export class AdvancedArray<T> extends Array<T> {
     /** Returns true if the array contains any items. */
     public any(): boolean {
         return this.length > 0;
@@ -36,9 +36,9 @@ export class AnalyzerArray<T> extends Array<T> {
         return noneResult;
     }
 
-    /** Passes each item in the array through selector() and returns an AnalyzerArray of the item returned. */
-    public select(selector: (item: T) => NonNullable<any>): AnalyzerArray<any> {
-        let sendBack = new AnalyzerArray<any>();
+    /** Passes each item in the array through selector() and returns an AdvancedArray of the item returned. */
+    public select(selector: (item: T) => NonNullable<any>): AdvancedArray<any> {
+        let sendBack = new AdvancedArray<any>();
 
         for (let i = 0; i < this.length; i++) {
             let item = this[i];
