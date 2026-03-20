@@ -2,7 +2,7 @@
 // (C) Copyright 2026 SirKingBinx
 
 section .data
-_init db 0xFB // ftype byte goes here. 0xFB - bootable thing for the BIOS
+_init db 0x5A // ftype byte goes here. 0x5A - bootable thing for the BIOS
 
 section .text
 _start:
