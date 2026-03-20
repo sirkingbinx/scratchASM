@@ -1,4 +1,4 @@
-; load OS into RAM
+; Finds the OS in memory and starts execution
 
 section .data
     noBootableMsg: db "No bootable program in memory" ; nothing here msg
