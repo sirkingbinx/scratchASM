@@ -1,0 +1,6 @@
+[Expected output program converted into hexadecimal and commented]
+
+[4C = label, -> = _start]
+4C 5F 73 74 61 72 74
+[NOP]
+01

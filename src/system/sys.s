@@ -1,4 +1,4 @@
-; SYSPROG.S - loads whatever program ends up getting written
+; SYS.S - system
 ; (C) Copyright 2026 SirKingBinx - MIT License
 
 #include syscall.s
@@ -30,6 +30,9 @@ _start:
     mov icb, 0
     mov icc, 0
     mov icd, 0
+
+    ; strip any start labels
+    int 0x03 
 
     ; start program loading
     mov ax, byteref progStart
